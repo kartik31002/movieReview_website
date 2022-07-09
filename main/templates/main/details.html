@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% block content %}
+
+<div class="container">
+  <br>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="card-img-top" src="https://image.tmdb.org/t/p/w300{{ response.poster_path }}" alt="Card image cap" width= "75%">
+
+        </div>
+        <div class="col-md-8">
+          <h3 class="text-centre">{{ response.title }}</h3>
+          <p>{{ response.overview }}</p>
+          <h5>Rating : {{ response.vote_average }}</h5>  
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+{% endblock %}
